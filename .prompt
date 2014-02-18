@@ -1,0 +1,6 @@
+BLACK='\[$(tput setaf 0)\]'
+BRIGHT_BLACK='\[$(tput setaf 8)\]'
+BOLD='\[$(tput bold)\]'
+RESET='\[$(tput sgr0)\]'
+export PS1="$BRIGHT_BLACK\u$BLACK@$BRIGHT_BLACK\h$BLACK:$BRIGHT_BLACK\w$RESET\n$BOLD\$$RESET "
+export PS2="$BLACK>$RESET "
