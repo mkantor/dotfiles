@@ -29,6 +29,8 @@
   "linter-shellcheck":
     enableNotice: true
     shellcheckExecutablePath: "/usr/local/bin/shellcheck"
+  "package-sync":
+    createOnChange: true
   "save-session":
     dataSaveFolder: "/Users/mkantor/.atom/packages/save-session/projects"
     project: "/Users/mkantor"
