@@ -1,0 +1,59 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "5cd4506d-38f8-41ee-82c6-e0e19731f38f"
+  core:
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+  editor:
+    autoIndentOnPaste: false
+    backUpBeforeSaving: true
+    fontSize: 11
+    invisibles: {}
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+  "exception-reporting":
+    userId: "8b5866a7-5d21-8d20-7317-24103a27e3d5"
+  linter:
+    showErrorInline: true
+    showErrorPanel: false
+    subtleLinterErrors: [
+      "shellcheck"
+    ]
+  "linter-jshint": {}
+  "linter-scalac":
+    scalacExecutablePath: "/usr/local/bin/scalac"
+  "linter-shellcheck":
+    enableNotice: true
+    shellcheckExecutablePath: "/usr/local/bin/shellcheck"
+  "save-session":
+    dataSaveFolder: "/Users/mkantor/.atom/packages/save-session/projects"
+    project: "/Users/mkantor"
+    restoreOpenFiles: false
+    restoreOpenFilesPerProject: false
+    restoreProject: false
+    restoreScrollPosition: false
+    restoreWindow: false
+    skipSavePrompt: false
+    windowHeight: 874
+    windowWidth: 1440
+    windowX: 0
+    windowY: 22
+  "spell-check":
+    grammars: [
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "source.js"
+      "source.scala"
+      "source.objcpp"
+      "source.ruby"
+    ]
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
