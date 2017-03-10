@@ -3,6 +3,7 @@
     general:
       _analyticsUserId: "5cd4506d-38f8-41ee-82c6-e0e19731f38f"
   core:
+    telemetryConsent: "limited"
     themes: [
       "atom-dark-ui"
       "atom-dark-syntax"
@@ -31,19 +32,6 @@
     shellcheckExecutablePath: "/usr/local/bin/shellcheck"
   "package-sync":
     createOnChange: true
-  "save-session":
-    dataSaveFolder: "/Users/mkantor/.atom/packages/save-session/projects"
-    project: "/Users/mkantor"
-    restoreOpenFiles: false
-    restoreOpenFilesPerProject: false
-    restoreProject: false
-    restoreScrollPosition: false
-    restoreWindow: false
-    skipSavePrompt: false
-    windowHeight: 874
-    windowWidth: 1440
-    windowX: 0
-    windowY: 22
   "spell-check":
     grammars: [
       "source.gfm"
@@ -54,6 +42,10 @@
       "source.scala"
       "source.objcpp"
       "source.ruby"
+      "source.go"
+      "source.css"
+      "text.html.basic"
+      "text.html.php"
     ]
   "tree-view":
     hideVcsIgnoredFiles: true
