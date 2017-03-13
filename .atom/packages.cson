@@ -29,8 +29,6 @@ packages: [
   "linter"
   "linter-jshint"
   "linter-jsonlint"
-  "linter-scalac"
-  "linter-shellcheck"
   "linter-ruby"
   "linter-rust"
   "linter-scalac"
