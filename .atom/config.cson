@@ -11,7 +11,7 @@
   editor:
     autoIndentOnPaste: false
     backUpBeforeSaving: true
-    fontSize: 11
+    fontSize: 15
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
@@ -32,6 +32,9 @@
     shellcheckExecutablePath: "/usr/local/bin/shellcheck"
   "package-sync":
     createOnChange: true
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
   "spell-check":
     grammars: [
       "source.gfm"

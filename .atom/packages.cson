@@ -1,6 +1,5 @@
 packages: [
   "atom-beautify"
-  "atom-mermaid"
   "auto-detect-indentation"
   "build"
   "build-cargo"
@@ -34,6 +33,8 @@ packages: [
   "linter-scalac"
   "linter-shellcheck"
   "package-sync"
+  "prettier-atom"
   "ruby-block"
+  "rustfmt"
   "sort-lines"
 ]
