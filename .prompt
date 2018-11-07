@@ -1,6 +1,22 @@
-BLACK='\[$(tput setaf 0)\]'
-BRIGHT_BLACK='\[$(tput setaf 8)\]'
-BOLD='\[$(tput bold)\]'
-RESET='\[$(tput sgr0)\]'
-export PS1="$BRIGHT_BLACK\u$BLACK@$BRIGHT_BLACK\h$BLACK:$BRIGHT_BLACK\w$RESET\n$BOLD\$$RESET "
-export PS2="$BLACK>$RESET "
+#!/usr/bin/env bash
+
+red='\[$(tput setaf 1)\]'
+green='\[$(tput setaf 2)\]'
+black='\[$(tput setaf 0)\]'
+bright_black='\[$(tput setaf 8)\]'
+bold='\[$(tput bold)\]'
+reset='\[$(tput sgr0)\]'
+
+# PS1 has the following lines:
+#   - Exit status of previous process.
+#   - User/host/current directory.
+#   - The prompt itself ($).
+export PS1="\$(
+  exit_status=\$?
+  [ \${exit_status} -eq 0 ] && echo -n \"${bold}${green}.\" || echo -n \"${bold}${red}!\"
+  echo \"${reset}${black} process exited with \$exit_status\"
+)${reset}
+${bright_black}\\u${black}@${bright_black}\\h${black}:${bright_black}\\w${reset}
+${bold}\$${reset} "
+
+export PS2="${black}>${reset} "
