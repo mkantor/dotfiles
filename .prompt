@@ -16,6 +16,7 @@ export PS1="\$(
   [ \${exit_status} -eq 0 ] && echo -n \"${bold}${green}.\" || echo -n \"${bold}${red}!\"
   echo \"${reset}${black} process exited with \$exit_status\"
 )${reset}
+
 ${bright_black}\\u${black}@${bright_black}\\h${black}:${bright_black}\\w${reset}
 ${bold}\$${reset} "
 
