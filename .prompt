@@ -8,13 +8,13 @@ bold='\[$(tput bold)\]'
 reset='\[$(tput sgr0)\]'
 
 # PS1 has the following lines:
-#   - Exit status of previous process.
+#   - Exit status of previous process and timestamp.
 #   - User/host/current directory.
 #   - The prompt itself ($).
 export PS1="\$(
   exit_status=\$?
   [ \${exit_status} -eq 0 ] && echo -n \"${bold}${green}.\" || echo -n \"${bold}${red}!\"
-  echo \"${reset}${black} process exited with \$exit_status\"
+  echo \"${reset}${black} process exited with \$exit_status at \$(date +%Y-%m-%dT%H:%M:%S%z)\"
 )${reset}
 
 ${bright_black}\\u${black}@${bright_black}\\h${black}:${bright_black}\\w${reset}
